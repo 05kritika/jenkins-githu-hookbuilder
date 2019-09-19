@@ -20,3 +20,24 @@ This project contains a gitignore that will stop most IDE specific files as well
 
 
 [![Build Status](http://ec2-184-72-65-179.compute-1.amazonaws.com:8080/job/Webhook_demo/badge/icon)](http://ec2-184-72-65-179.compute-1.amazonaws.com:8080/job/Webhook_demo/)
+
+
+
+
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  jdk:
+    installations:
+    - home: "/usr/lib/jvm/java-8-openjdk-amd64/"
+      name: "myjava"
+  maven:
+    installations:
+    - name: "mymvn"
+      properties:
+      - installSource:
+          installers:
+          - maven:
+              id: "3.6.2"
